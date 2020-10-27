@@ -34,8 +34,9 @@ public class UserController {
         users.add(new User("蔡文姬",15));
     }
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public List<User> hello(){
+    @RequestMapping(value = "/getUserList", method = RequestMethod.GET)
+    public List<User> getUserList(){
         return users;
     }
+
 }
