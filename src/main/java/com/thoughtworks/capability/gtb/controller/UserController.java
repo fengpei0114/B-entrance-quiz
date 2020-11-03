@@ -34,6 +34,7 @@ public class UserController {
         users.add(new User("蔡文姬",15));
     }
 
+    // TODO GTB-知识点: - API设计没有遵循Restful API Design
     @RequestMapping(value = "/getUserList", method = RequestMethod.GET)
     public List<User> getUserList(){
         return users;
